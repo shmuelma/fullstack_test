@@ -21,15 +21,12 @@ class UserScreen extends Component {
 
   async selectAll() {
     try {
-      console.log('calling read all endpoint');
 
       const output = await fetch(list_user);
       const outputJSON = await output.json();
       this.setState({ userArr: outputJSON })
-      console.log('Success');
-      console.log(outputJSON);
     } catch (error) {
-      console.log(error);
+      alert(error);
     }
   }
   async deleteUser(item_id) {

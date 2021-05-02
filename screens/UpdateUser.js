@@ -21,9 +21,7 @@ class UpdateUser extends Component {
 
   async updateUser(item) {
     try {
-      console.log(environment.update);
-      console.log('calling update endpoint with id ' + item.id + ' and value "' + item.item);
-
+      
       const requestBody = {
         item: item.item
       };
@@ -31,7 +29,7 @@ class UpdateUser extends Component {
       this.props.navigation.navigate('UserScreen');
     }
     catch (error) {
-      console.log(error);
+      alert(error);
     }
   }
 
