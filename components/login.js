@@ -54,7 +54,6 @@ export default class Login extends Component {
         .signInWithEmailAndPassword(this.state.email, this.state.password)
         .then((res) => {
           this.setState({
-            isLoading: false,
             email: '',
             password: '',
             emailerror: '',
