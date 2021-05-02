@@ -57,7 +57,6 @@ export default class Signup extends Component {
             displayName: this.state.displayName
           })
           this.setState({
-            displayName: '',
             email: '',
             password: '',
             emailerror: '',
